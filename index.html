@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS Links -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+
+    <title>Round Slider</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <form class="cmxform" id="commentForm" method="get" action="">
+            <fieldset>
+              <legend>Please provide your name, email address (won't be published) and a comment</legend>
+              <p>
+                <label for="cname">Name (required, at least 2 characters)</label>
+                <input id="cname" name="name" minlength="2" type="text" required>
+              </p>
+              <p>
+                <label for="cemail">E-Mail (required, give a vaid one)</label>
+                <input id="cemail" type="email" name="email" required>
+              </p>
+              <p>
+                <label for="curl">URL (optional, if you have any)</label>
+                <input id="curl" type="url" name="url">
+              </p>
+              <p>
+                <label for="ccomment">Your comment (required)</label>
+                <textarea id="ccomment" name="comment" required></textarea>
+              </p>
+              <p>
+                <input class="submit" type="submit" value="Submit">
+              </p>
+            </fieldset>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+      $("#commentForm").validate();
+    </script>
+  </body>
+</html>
